@@ -1,0 +1,54 @@
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+main {
+	flex: 1 1 auto;
+}
+
+.firstScreen {
+	padding: 45px 30px;
+	position: relative;
+	background: url('../img/home__bg.png')  center center/cover no-repeat;
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: #fff;
+		&-box {
+			display: flex;
+			align-items: center;
+			gap: 60px;
+			span {
+				display: block;
+				padding: 9px;
+				&:first-child {
+					border: 1px solid #BBBBBB;
+				}
+			}
+		}
+		button {
+			background-color: #D80B8C;
+			font-size: 20px;
+			padding: 15px 60px;
+		}
+	}
+}
+
+._decor {
+	&::after {
+		content: '';
+		position: absolute;
+		width: 930px;
+		height: 40px;
+		background-color: #F4F4F4;
+		display: block;
+		top: -40px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
